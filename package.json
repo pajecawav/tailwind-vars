@@ -19,7 +19,8 @@
 	"style": "dist/index.css",
 	"main": "dist/index.css",
 	"scripts": {
-		"build": "rimraf dist && tsx src/main.ts"
+		"build": "rimraf dist && tsx src/main.ts",
+		"prepublishOnly": "pnpm build"
 	},
 	"devDependencies": {
 		"@types/color-convert": "^2.0.0",
