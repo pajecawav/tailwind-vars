@@ -27,8 +27,8 @@
 		"@types/node": "^18.13.0",
 		"color-convert": "^2.0.1",
 		"rimraf": "^5.0.1",
-		"tailwindcss": "^3.3.2",
+		"tailwindcss": "^3.3.3",
 		"tsx": "^3.12.7",
-		"typescript": "^5.0.4"
+		"typescript": "^5.1.6"
 	}
 }

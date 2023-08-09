@@ -9,6 +9,7 @@ import { writeCssVariables } from "./output";
 import { buildRadiuses } from "./radius";
 import { buildShadows } from "./shadow";
 import { buildSizes } from "./size";
+import { buildEasings } from "./easing";
 
 mkdirSync("dist");
 
@@ -22,6 +23,7 @@ const vars = [
 	...buildRadiuses(),
 	...buildShadows(),
 	...buildSizes(),
+	...buildEasings(),
 ];
 
 writeCssVariables(vars, "index.css");
