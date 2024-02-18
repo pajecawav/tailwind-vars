@@ -1,4 +1,5 @@
-import { mkdirSync } from "fs";
+import { copyFileSync, mkdirSync } from "fs";
+import path from "path";
 import { buildBlurs } from "./blur";
 import { buildColors } from "./color";
 import { buildFontSizes } from "./font-size";
@@ -27,3 +28,5 @@ const vars = [
 ];
 
 writeCssVariables(vars, "index.css");
+
+copyFileSync(path.resolve(__dirname, "./preflight.css"), path.join("dist", "preflight.css"));

@@ -15,7 +15,6 @@
 		"style"
 	],
 	"license": "MIT",
-	"sideEffects": false,
 	"style": "dist/index.css",
 	"main": "dist/index.css",
 	"scripts": {
