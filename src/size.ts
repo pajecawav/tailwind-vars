@@ -2,9 +2,13 @@ import theme from "tailwindcss/defaultTheme";
 import { DefaultTheme } from "tailwindcss/types/generated/default-theme";
 
 const SPACINGS: Array<keyof DefaultTheme["spacing"]> = [
+	"0.5",
 	"1",
+	"1.5",
 	"2",
+	"2.5",
 	"3",
+	"3.5",
 	"4",
 	"5",
 	"6",
@@ -39,7 +43,7 @@ export function buildSizes(): string[] {
 	const vars = [];
 
 	for (const name of SPACINGS) {
-		vars.push(`--size-${name}: ${theme.spacing[name]};`);
+		vars.push(`--size-${name.replace(".", "\\.")}: ${theme.spacing[name]};`);
 	}
 
 	vars.push("--size-prose: 65ch;");
