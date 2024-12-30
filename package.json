@@ -1,6 +1,6 @@
 {
 	"name": "tailwind-vars",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "Use a subset of Tailwind default theme as CSS variables",
 	"repository": "https://github.com/pajecawav/tailwind-vars.git",
 	"bugs": "https://github.com/pajecawav/tailwind-vars/issues",
